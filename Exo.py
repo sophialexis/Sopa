@@ -42,7 +42,7 @@ for karakter in chenn:
         break
 
 if endeks is not None:
-    print("Premye karakter 'a' nan chenn se:", endeks)
+    print("7: Premye karakter 'a' nan chenn se:", endeks)
 else:
     print("Pa gen karakter 'a' nan chenn.")
 
@@ -73,4 +73,39 @@ lami= so.replace (" ","")
 print("10: ", lami)
  
 
+#exo1 2eme partie
+k= "kreye yon lis elememan."
+n=10
+lis=[i for i in range (n+1) if i%2==0]
+print("1:" , lis)
 
+#exo2
+lis_antye = [1, 2, 3, 4, 5]
+lis_chenn = [str(x) for x in lis_antye]
+print("2: ",lis_chenn)
+
+#exo3
+lis = ["pom", "banann", "kann", "fwi"]
+majiskil = [las.upper() for las in lis]
+print("3: ",majiskil)
+
+#exo4
+l = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9,24,27,30]
+divizib_pa_3 = [l[i] for i in range(len(l)) if i % 3 == 0]
+print("4: ",divizib_pa_3)
+
+#exo5
+li = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+lis_tipl = [(li[i], li[i + 1], li[i + 2]) for i in range(0, len(li), 3)]
+print("5: ",lis_tipl)
+
+#exo6
+lis_avek_doublon = [1, 2, 2, 3, 4, 4, 5, 6, 4,6,"A","A"]
+lis_san_doublon = list(set(lis_avek_doublon))
+print(lis_san_doublon)
+
+#exo 7
+lis1 = [1, 2, 3, 4, 5]
+lis2 = [3, 4, 5, 6, 7]
+lisa = [t for t in lis1 if t in lis2]
+print("7: ",lisa)
